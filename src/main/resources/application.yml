@@ -102,17 +102,17 @@ springdoc:
     enabled: true
 
 --- #------------------- test 特定配置--------------------------
-spring:
-  config:
-    activate:
-      on-profile: test
+# spring:
+#   config:
+#     activate:
+#       on-profile: test
 
 --- #-------------------- prod 特定配置-------------------------
-spring:
-  config:
-    activate:
-      on-profile: prod
-  data:
+# spring:
+#   config:
+#     activate:
+#       on-profile: prod
+#   data:
     # Redis 配置
     # redis:
     #   host: 127.0.0.1

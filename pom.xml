@@ -19,6 +19,10 @@
 		<jjwt.version>0.12.5</jjwt.version>
 		<springdoc-openapi.version>2.3.0</springdoc-openapi.version>
 		<spring-aop.version>3.2.3</spring-aop.version>
+    <!-- mybatis代码生成器 -->
+    <mybatis-plus-generator.version>3.5.5</mybatis-plus-generator.version>
+    <!-- mybatis代码生成器，所需要的“velocity模板引擎” -->
+    <velocity-engine-core.version>2.3</velocity-engine-core.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -43,6 +47,19 @@
 			<artifactId>mybatis-plus-spring-boot3-starter</artifactId>
 			<version>${mybatis-plus.version}</version>
 		</dependency>
+    <!-- mybatis代码生成器 -->
+    <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-generator</artifactId>
+        <version>${mybatis-plus-generator.version}</version>
+    </dependency>
+
+    <!-- mybatis代码生成器，所需要的“velocity模板引擎” -->
+    <dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity-engine-core</artifactId>
+        <version>${velocity-engine-core.version}</version>
+    </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
